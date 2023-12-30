@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main # default
+
+publish_mode: editorial_workflow
+
+media_folder: "src/content" # Ruta donde se guardarán los archivos de medios en el repositorio
+public_folder: "/public" # La ruta donde se encontrarán los archivos de medios en el sitio publicado
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog" # Ruta donde se almacenan los documentos de esta colección, ajusta según tu estructura
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/BlogPost.astro"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Hero Image", name: "heroImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

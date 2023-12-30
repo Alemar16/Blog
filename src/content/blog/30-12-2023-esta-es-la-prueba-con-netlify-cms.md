@@ -1,0 +1,21 @@
+---
+layout: ../../layouts/BlogPost.astro
+title: Esta es la Prueba Con Netlify CMS
+description: >-
+  Netlify CMS is an open source content management system for your Git workflow
+  that enables you to provide editors with friendly UI and intuitive workflow. 
+pubDate: '2023-12-30T00:53:32-03:00'
+heroImage: /public/whatsapp-image-2023-12-30-at-12.57.27-am.jpeg
+---
+# Netlify CMS
+
+Netlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and an intuitive workflow. You can use it with any static site generator to create faster, more flexible web projects. Content is stored in your Git repository alongside your code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git.
+
+At its core, Netlify CMS is an open-source React app that acts as a wrapper for the Git workflow, using the GitHub API. This provides many advantages, including:
+
+1. **Fast, web-based UI:** with rich-text editing, real-time preview, and drag-and-drop media uploads.
+2. **Platform agnostic:** works with most static site generators.
+3. **Easy installation:** add two files to your site and hook up the backend by including in your build process or linking to our CDN.
+4. **Modern authentication:** using GitHub and JSON web tokens.
+5. **Flexible content types:** specify an unlimited number of content types with custom fields.
+6. **Fully extensible:** create custom-styled previews, UI widgets, and editor plugins.
